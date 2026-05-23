@@ -53,13 +53,11 @@ public static boolean isPalindrome(String str) {
         public static  void PrintSentenceReverse2(String sentence){
         String [] ar =sentence.split(" ");
         for(int i= ar.length-1;i>=0;i--){
-            String str= ar[i];
+                   String str= ar[i];
            for(int j =str.length()-1;j>=0;j--){
         System.out.print(str.charAt(j));
            }
          System.out.println();
-
-
         }
 
         }
