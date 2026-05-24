@@ -13,6 +13,9 @@ public class HomeWorkMain {
         PrintSentenceReverse2("Hello course QA 84");// 4
         System.out.println("--------------------------");
         System.out.println(isPalindrome("EvE"));// 5
+        System.out.println("--------------------------");
+        PrintSentenceReverse3("Hello course QA 84");// 6
+
     }
 //1
  static void printCharIndex(String str, char sym) {
@@ -57,7 +60,13 @@ public class HomeWorkMain {
         }
 
         }
-
+      static  void PrintSentenceReverse3(String sentence){
+        String [] ar =sentence.split(" ");
+        for(int i= ar.length-1;i>=0;i--){
+            String reversed = new StringBuilder(ar[i]).reverse().toString();
+            System.out.println(reversed);
+        }
+      }
 
     }
 
