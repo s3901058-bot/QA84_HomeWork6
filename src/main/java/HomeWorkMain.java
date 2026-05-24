@@ -35,13 +35,13 @@ public class HomeWorkMain {
      for (int i = 0, j = str.length() - 1; i < j; i++, j--) {
           char ci = str.charAt(i);
           char cj = str.charAt(j);
-          if (ci == cj)
+          if (ci != cj)
 
           {
-              return true;
+              return false;
           }
       }
-    return false;
+    return true;
 }
  //3
         static void printSentenceReverse1(String sentence){
