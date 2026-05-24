@@ -15,6 +15,8 @@ public class HomeWorkMain {
         System.out.println(isPalindrome("EvE"));// 5
         System.out.println("--------------------------");
         PrintSentenceReverse3("Hello course QA 84");// 6
+        System.out.println("--------------------------");
+        System.out.println(isPalindrome("Name no one man"));// 7
 
     }
 //1
@@ -26,10 +28,11 @@ public class HomeWorkMain {
             }
         }
     }
- //2-4
+ //2-4-6
   static boolean isPalindrome(String str) {
+      str = str.toLowerCase();
+      str = str.replace(" ", "");
      for (int i = 0, j = str.length() - 1; i < j; i++, j--) {
-          str = str.toLowerCase();
           char ci = str.charAt(i);
           char cj = str.charAt(j);
           if (ci == cj)
@@ -67,6 +70,7 @@ public class HomeWorkMain {
             System.out.println(reversed);
         }
       }
+
 
     }
 
