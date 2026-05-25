@@ -16,8 +16,30 @@ public class HomeWorkMain {
         System.out.println("--------------------------");
         PrintSentenceReverse3("Hello course QA 84");// 6
         System.out.println("--------------------------");
-        System.out.println(isPalindrome("Name no one man"));// 7
+        System.out.println(isPalindrome("Name now one man"));// 7
+        System.out.println("--------------------------");
+        int res1 = substringIndex("abcdeffgh","fgh");
+        System.out.println(res1);
 
+    }
+    public static int substringIndex(String s, String sub) {
+       System.out.println("sub: "+ sub.length()+" sym"+ " String: "+ s.length()+" sym" );
+        for (int i = 0; i <= s.length() - sub.length(); i++) {
+                 int count = 0;
+            for (int j = 0; j < sub.length(); j++) {
+                if (s.charAt(i + j) == sub.charAt(j)) {
+                    count++;
+                } else {
+                    System.out.println("Index: "+i+" sub string : " + sub.charAt(j) +
+                            " String : " + s.charAt( i));
+                }
+            }
+            // если совпали все символы
+            if (count == sub.length()) {
+               return i;
+            }
+        }
+        return -1;
     }
 //1
  static void printCharIndex(String str, char sym) {
@@ -70,7 +92,6 @@ public class HomeWorkMain {
             System.out.println(reversed);
         }
       }
-
 
     }
 
