@@ -18,10 +18,11 @@ public class HomeWorkMain {
         System.out.println("--------------------------");
         System.out.println(isPalindrome("Name now one man"));// 7
         System.out.println("--------------------------");
-        int res1 = substringIndex("abcdeffgh","fgh");
+        int res1 = substringIndex("abcdeffgh","def");//8
         System.out.println(res1);
 
     }
+    //8
     public static int substringIndex(String s, String sub) {
        System.out.println( "String: "+ s.length()+" sym" + " sub: "+ sub.length()+" sym");
         for (int i = 0; i <= s.length() - sub.length(); i++) {
@@ -33,12 +34,10 @@ public class HomeWorkMain {
                     System.out.println("Index: "+i+
                             " String : " + s.charAt( i)+" sub string : " + sub.charAt(j));
                 }
-            }
-            // если совпали все символы
+            } // если совпали все символы
             if (count == sub.length()) {
                return i;
-            }
-        }
+            }        }
         return -1;
     }
 //1
