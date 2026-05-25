@@ -23,15 +23,15 @@ public class HomeWorkMain {
 
     }
     public static int substringIndex(String s, String sub) {
-       System.out.println("sub: "+ sub.length()+" sym"+ " String: "+ s.length()+" sym" );
+       System.out.println( "String: "+ s.length()+" sym" + " sub: "+ sub.length()+" sym");
         for (int i = 0; i <= s.length() - sub.length(); i++) {
                  int count = 0;
             for (int j = 0; j < sub.length(); j++) {
                 if (s.charAt(i + j) == sub.charAt(j)) {
                     count++;
                 } else {
-                    System.out.println("Index: "+i+" sub string : " + sub.charAt(j) +
-                            " String : " + s.charAt( i));
+                    System.out.println("Index: "+i+
+                            " String : " + s.charAt( i)+" sub string : " + sub.charAt(j));
                 }
             }
             // если совпали все символы
